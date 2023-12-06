@@ -26,6 +26,7 @@ const borrarJuego = async (id) => {
    try {
       const Juego = await juegoSchema.findById(id);
       if (Juego) {
+         console.log(Juego)
          await juegoSchema.findByIdAndDelete(id);
          return "Juego eliminado";
       } else {

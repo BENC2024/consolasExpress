@@ -38,7 +38,8 @@ juegoController.deleteGame = async (req,res) => {
 }
 
 juegoController.updateGame = async (req,res) => {
-   const response = await actualizarJuego(req.body);
+   const { id }= req.params;
+   const response = await actualizarJuego(req.body,id);
    res.send(response);
 }
 

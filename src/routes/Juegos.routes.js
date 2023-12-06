@@ -18,6 +18,6 @@ routes.get("/listJuegos", getAllGames);
 routes.get("/detailJuego/:id", getOneGame);
 routes.post("/saveJuego",setGame)
 routes.delete("/deleteJuego/:id", deleteGame);
-routes.put("/updateJuego", updateGame);
+routes.put("/updateJuego/:id", updateGame);
 
 module.exports = routes // exportar las rutas

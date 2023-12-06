@@ -36,11 +36,11 @@ const borrarJuego = async (id) => {
    }
 }
 
-const actualizarJuego = async (game) => {
+const actualizarJuego = async (game,id) => {
    try {
-      const id = game._id
       const Juego = await juegoSchema.findById(id);
       if (Juego) {
+         console.log(game)
          await juegoSchema.findByIdAndUpdate(id, game)
          return "Juego actualizado";
       } else {

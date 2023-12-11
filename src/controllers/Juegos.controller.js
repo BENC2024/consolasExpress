@@ -22,18 +22,22 @@ juegoController.getAllGames = async (req,res) => {
 
 juegoController.getOneGame = async (req,res) => {
    const { id } = req.params;
+   console.log(req.params)
    const juego = await mostrarJuego(id)
    res.json(juego)
 };
 
 juegoController.setGame = async (req,res) => {
    await guardarJuego(req.body)
+   console.log(req.params)
    res.send("Guardado epicamente")
 }
 
 juegoController.deleteGame = async (req,res) => {
    const { id }= req.params;
+   console.log(req.body)
    const response = await borrarJuego(id);
+   console.log(response)
    res.send(response);
 }
 

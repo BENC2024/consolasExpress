@@ -4,7 +4,7 @@ const { Schema, model, SchemaType} = require("mongoose") //Utilizar dos caracter
 const JuegoSchema = new Schema({ 
    nombre: { type: String },
    descripcion: { type: String },
-   genero_id: { type: Schema.Types.ObjectId, ref: "generos" },
+   genero_id: { type: Schema.Types.ObjectId, ref: "generos" }, //esquema,tipo,obid mas referencia del modelo a agregar
    fechaLanzamiento: { type: String },
 })
 

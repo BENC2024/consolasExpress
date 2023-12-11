@@ -1,13 +1,13 @@
 
 //modulo de express
 const express = require("express")
-const app = express() //Se traen las funciones de express
+const app = express() //Se utilizan las funciones de express
 const cors = require('cors');
 
 const port = process.env.PORT//Configuracion del puerto
-const consolaRoutes = require("../routes/Consolas.routes")
-const juegoRoutes = require("../routes/Juegos.routes")
-const generoRoutes = require("../routes/Generos.routes")
+const consolaRoutes = require(process.env.CONSOLA)
+const juegoRoutes = require(process.env.JUEGO)
+const generoRoutes = require(process.env.GENERO)
 
 app.use(express.json()) //Solamente utilizar el formato json
 app.use(cors()) // Uso de enlace cruzado

@@ -55,5 +55,4 @@ module.exports = {
    guardarConsola,
    mostrarConsola,
    borrarConsola
-   //actualizarConsola
 }

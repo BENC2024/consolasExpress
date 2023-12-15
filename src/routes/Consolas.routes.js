@@ -24,6 +24,5 @@ routes.get("/listConsolas", getAllConsoles);
 routes.get("/detailConsola/:id", getOneConsole);
 routes.post("/saveConsola",setConsole)
 routes.delete("/deleteConsola/:id", deleteConsole);
-//routes.patch("/updateConsola/:id", updateConsole);
 
 module.exports = routes // exportar las rutas

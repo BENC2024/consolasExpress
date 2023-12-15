@@ -37,11 +37,6 @@ consolaController.deleteConsole = async (req,res) => {
    res.send(response);
 }
 
-consolaController.updateConsoles = async (req,res) => {
-
-
-}
-
 module.exports = consolaController
 /*
 consolaController.getAllConsoles = async function(res,req){}
